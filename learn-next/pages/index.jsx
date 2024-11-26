@@ -1,9 +1,15 @@
 // '/'에 해당하는 페이지 컴포넌트
 
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import ProductList from '@/components/ProductList';
 function ProductPage() {
-	return <div>hello next</div>;
+	return (
+		<div>
+			<h1>상품목록 페이지</h1>
+			<ProductList />
+		</div>
+	);
 }
 
 // 1. 상품 목록 페이지 - '/'
