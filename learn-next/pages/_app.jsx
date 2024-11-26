@@ -1,13 +1,17 @@
+import Layout from '@/layouts/Layout';
 import '@/styles/globals.css';
 import Link from 'next/link';
 
 export default function App({ Component, pageProps }) {
 	return (
-		<div>
-			<nav>
-				<Link href="/home">홈</Link> | <Link href="/login">로그인</Link>
-			</nav>
+		<Layout>
 			<Component {...pageProps} />
-		</div>
+		</Layout>
+		// <div>
+		// 	<nav>
+		// 		<Link href="/home">Home</Link> | <Link href="/login">Login</Link>
+		// 	</nav>
+		// 	<Component {...pageProps} />
+		// </div>
 	);
 }
