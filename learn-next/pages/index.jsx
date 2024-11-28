@@ -3,10 +3,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductList from '@/components/ProductList';
+import ProductHeader from '@/components/ProductHeader';
 function ProductPage() {
 	return (
 		<div>
-			<h1>상품목록 페이지</h1>
+			<ProductHeader title="상품 목록 페이지" />
 			<ProductList />
 		</div>
 	);
