@@ -3,11 +3,16 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import styles from './ProductList.module.css';
 import Link from 'next/link';
+import { fetchProducts } from '@/api';
 
 export default function ProductList() {
 	let [products, setProducts] = useState();
+
 	useEffect(() => {
-		axios.get('http://localhost:4000/products').then(response => {
+		// axios.get('http://localhost:4000/products').then(response => {
+		// 	setProducts(response.data);
+		// });
+		fetchProducts().then(response => {
 			setProducts(response.data);
 		});
 	}, []);
