@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import ProductList from '@/components/ProductList';
+import ProductList from '@/components/product-list/ProductList';
 import ProductHeader from '@/components/ProductHeader';
 function ProductPage() {
 	return (
