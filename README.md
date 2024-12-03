@@ -1,5 +1,4 @@
 <h1>Next.js 시작하기(캡틴 판교) 강의 수강</h1>
-https://www.inflearn.com/course/next-js-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
 
 <h2>구현한 내용</h2>
 <h3>상품 목록 페이지</h3>
